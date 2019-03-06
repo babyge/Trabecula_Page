@@ -19,6 +19,14 @@ body{
     position:fixed;
     right:0px;
 }
+a:link { 
+    <!-- font-size: 12px;  -->
+    color: #FFFFFF;
+} 
+a:visited { 
+    <!-- font-size: 12px;  -->
+    color: #FFFFFF;
+}
 </style>
 
 <title>骨小梁分析程序</title>
@@ -30,13 +38,13 @@ body{
  
 <div class="menu">
 <font color="white">
-<b>&nbsp;网页导航</b><br>
+<b>&nbsp;网站导航</b><br>
 <p style="line-height:25px;">
-&nbsp;软件手册<br>
-&nbsp;软件下载<br>
-&nbsp;关于我们<br>
+&nbsp;<a href="#manual">软件手册<a><br>
+&nbsp;<a href="#download">软件下载<a><br>
+&nbsp;<a href="#aboutus">关于我们<a><br>
 </p>
-&nbsp;Github<br>
+&nbsp;<a href="https://github.com/ZCMU/Trabecula">Github<a><br>
 </font>
 </div>
  
@@ -45,13 +53,13 @@ body{
 <p>骨组织病理切片显微图像结构形态计量开源软件</p>
 <img border="0" src="./images/trabelab.jpg">
 
-<h3 style="background:#5D7790"><font color="white">&nbsp;软件手册</font></h3>
+<h3 id="manual" style="background:#5D7790"><font color="white">&nbsp;软件手册</font></h3>
 
 <li><i>打开图片</i></li>
     <dd>点击“Load”按钮，在对话框中选择要处理的图片的文件名，此时在两个框中显示图片。</dd>
 
 <li><i>选择样本颜色</i></li>
-    <dd><在右边的框中用鼠标点选样本染色区域的颜色。</dd>
+    <dd>在右边的框中用鼠标点选样本染色区域的颜色。</dd>
 
 <li><i>初步分割</i></li>
     <dd>按下“Start Segment”按钮，此时在右边的框中出现分割结果，用绿色块表示。</dd>
@@ -88,15 +96,29 @@ body{
     <dd>按下“Ruler”按钮，此时可以在右边的框中用鼠标点击移动拉出一个黄色线，并实时显示线的像素长度。</dd>
     <dd>当释放鼠标时，恢复原状。</dd>
 
-<h3 style="background:#5D7790"><font color="white">&nbsp;软件下载</font></h3>
-当前版本：<br>
-点击下载
+<h3 id="download" style="background:#5D7790"><font color="white">&nbsp;软件下载</font></h3>
+Trabecula-1.0.1-win64.zip<br>
+<a href="files/Trabecula-1.0.1-win64.zip">点击下载<a>
 
-<h3 style="background:#5D7790"><font color="white">&nbsp;关于我们</font></h3>
-
-
+<h3 id="aboutus" style="background:#5D7790"><font color="white">&nbsp;关于我们</font></h3>
+浙江中医药大学<br>
+<a href="http://www.zcmu.edu.cn/">www.zcmu.edu.cn<a>
 </div>
 
 </div>
-
 </body>
+
+<!-- <script language="javascript" type=text/javascript> -->
+<!-- function ShowFileAccessInfo(filespec) -->
+<!-- { -->
+    <!-- var fso, f, s; -->
+    <!-- fso = new ActiveXObject("Scripting.FileSystemObject"); -->
+    <!-- f = fso.GetFile(filespec);    // filespec 是指定文件的路径（绝对和或相对的） -->
+    <!-- s += "建立时间: " + f.DateCreated + ""; -->
+    <!-- s += "访问时间: " + f.DateLastAccessed + ""; -->
+    <!-- s += "修改时间: " + f.DateLastModified; -->
+    <!-- return(s); -->
+<!-- } -->
+<!-- var filespec="files/Trabecula-1.0.1-win64.zip"; -->
+<!-- document.getElementById('appver').write(ShowFileAccessInfo(filespec)); -->
+<!-- </script> -->
