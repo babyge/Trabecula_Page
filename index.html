@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html style="height:100%">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+body{
+    background-color:#F7F7F7;
+    <!-- font-family:"微软雅黑"; -->
+    margin:10; padding:10;
+    height:100%; width:100%;
+}
+.menu{
+    background-color:#5D7790;
+    width:200px;
+    float:right;
+    height:100%;
+    position:fixed;
+    right:0px;
+}
+</style>
+
+<title>骨小梁分析程序</title>
+</head>
+
+<body>
+
+<div id="container" style="height:100%;">
+ 
+<div class="menu">
+<font color="white">
+<b>&nbsp;网页导航</b><br>
+<p style="line-height:25px;">
+&nbsp;软件手册<br>
+&nbsp;软件下载<br>
+&nbsp;关于我们<br>
+</p>
+&nbsp;Github<br>
+</font>
+</div>
+ 
+<div id="content" style="margin-right:220px;">
+<h2 style="background:#5D7790"><font color="white">&nbsp;Trabecula Lab</font></h2>
+<p>骨组织病理切片显微图像结构形态计量开源软件</p>
+<img border="0" src="./images/trabelab.jpg">
+
+<h3 style="background:#5D7790"><font color="white">&nbsp;软件手册</font></h3>
+
+<li><i>打开图片</i></li>
+    <dd>点击“Load”按钮，在对话框中选择要处理的图片的文件名，此时在两个框中显示图片。</dd>
+
+<li><i>选择样本颜色</i></li>
+    <dd><在右边的框中用鼠标点选样本染色区域的颜色。</dd>
+
+<li><i>初步分割</i></li>
+    <dd>按下“Start Segment”按钮，此时在右边的框中出现分割结果，用绿色块表示。</dd>
+
+<li><i>增加样本颜色</i></li>
+    <dd>按下“Add”按钮，此时可以在右边的框中用鼠标点选新的样本颜色，并出现新的分割结果。</dd>
+
+<li><i>擦除不需要的区域</i></li>
+    <dd>按下“Erase”按钮，此时可以在右边的框中用鼠标点击移动拉出一个黄色矩形框，</dd>
+    <dd>作为要擦除的区域，当释放鼠标时，出现新的分割结果。</dd>
+
+<li><i>橡皮</i></li>
+    <dd>按下“Rubber”按钮，此时可以在右边的框中用鼠标点击并自由移动拉出一条黄色不规则线，</dd>
+    <dd>当释放鼠标时，黄色不规则线所在的图像区域恢复原状，形成新的分割结果。</dd>
+
+<li><i>修补部分区域</i></li>
+    <dd>按下“Repair”按钮，此时可以在右边的框中用鼠标点击移动拉出一个黄色矩形框，</dd>
+    <dd>作为要修补的区域，当释放鼠标时，出现新的分割结果。</dd>
+    <dd>增加样本颜色、擦除区域、修补区域可以反复进行。</dd>
+
+<li><i>形态学腐蚀操作</i></li>
+    <dd>按下“Erode”按钮，对全局图像做一次形态学腐蚀操作。</dd>
+
+<li><i>形态学膨胀操作</i></li>
+    <dd>按下“Dilate”按钮，对全局图像做一次形态学膨胀操作。</dd>
+
+<li><i>连通域面积筛选</i></li>
+    <dd>设置好连通域面积筛选阈值，默认为20，按下“Filter”按钮，自动剔除连通域面积小于20的区域。</dd>
+
+<li><i>计量结果</i></li>
+    <dd>按下“Measure”按钮，出现面积、周长、骨小梁比率等计量结果。</dd>
+
+<li><i>测量尺</i></li>
+    <dd>按下“Ruler”按钮，此时可以在右边的框中用鼠标点击移动拉出一个黄色线，并实时显示线的像素长度。</dd>
+    <dd>当释放鼠标时，恢复原状。</dd>
+
+<h3 style="background:#5D7790"><font color="white">&nbsp;软件下载</font></h3>
+当前版本：<br>
+点击下载
+
+<h3 style="background:#5D7790"><font color="white">&nbsp;关于我们</font></h3>
+
+
+</div>
+
+</div>
+
+</body>
